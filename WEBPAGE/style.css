@@ -1,0 +1,491 @@
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adding variables at the root level of our stylesheet */
+:root{
+    --primary_color: rgb(49, 214, 49);
+    --border: #e4ffff;
+
+}
+
+/* Giving margin to the body */
+body {
+    font-family: "Source Sans 3", sans-serif;
+    margin:0.2 2rem;
+}
+
+/* For smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+.navBar_wrapper{
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.logo_wrapper{
+    height: 4rem;
+    width: 10rem;
+}
+
+.logo_wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.links_wrapper a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.links_wrapper a:hover{
+    color: var(--primary_color);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    color: var(--primary_color);
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+i.fa-solid.fa-magnifying-glass:hover
+{
+    color: rgb(140, 62, 62);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login{
+    color: black;
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    border-color: var(--primary_color);
+    cursor: pointer;
+    border-radius: 0.4rem;
+    text-decoration-color: #000;
+    
+}
+
+.sign_in{
+    margin: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    background-color: var(--primary_color);
+    border-color: var(--primary_color);
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+/* Home  */
+.top{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+
+.left{
+    font-size: 2.5rem;
+    margin-right: 5rem;
+
+}
+.left span{
+    color: var(--primary_color)
+}
+
+.left button{
+    padding: 1rem 2rem;
+}
+
+.right{
+    position: relative;
+}
+.right img{
+    height: 35rem;
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 40px 40px 100px 40px;
+}
+
+.border{
+    height: 35rem;
+    width: 30rem;
+    border: 5rem solid var(--border);
+    border-radius: 40px 40px 100px 40px;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    z-index: -1;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    background-color: var(--border);
+    width: 20
+    rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 3rem 3rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.icon_wrapper{
+    color: #fff;
+    background-color: var(--primary_color);
+    padding: 1rem;
+    clip-path: circle(40%);
+
+
+}
+
+.icon_wrapper i{
+    font-size: 1.5rem;
+}
+
+/* Courses */
+.heading{
+    margin: 5rem 0;
+    padding: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333232;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Swiper.js */
+.swiper {
+    width: 100%;
+    height: 100%;
+    /* margin-left: 2rem; */
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 4rem;
+  }
+
+  .swiper {
+    margin: 3rem;
+  }
+
+/* Our swiper Code  */
+.swiper-slide img{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    /* display: flex; */
+    
+}
+
+.swiper-slide{
+    padding: 0 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.swiper-button-prev,.swiper-button-next{
+    color: var(--primary_color) !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--primary_color) !important;
+}
+
+.swiper:hover{
+    background-color: #e4ffff;
+    cursor: pointer;
+}
+
+.overflow{
+    padding: 1rem;
+    color: #333233;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--primary_color);
+}
+
+/* Popular course */
+.popular_wrapper{
+    padding: 0 6rem;
+}
+
+.card_wrapper{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    height: 25rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.card:hover {
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 10);
+   /* background-color:rgb(214, 232, 214); */
+   /* box-shadow: #e4ffff; */
+    
+}
+
+.card img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover ;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.course_name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.star i{
+    color: var(--primary_color);
+    font-size: 1.5rem;
+}
+
+.lower{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: var(--primary_color);
+    font-weight: bold;
+}
+
+/* Popular Courses */
+.instructors_wrapper{
+    margin: 4rem 6rem;
+
+}
+
+.instructors
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+
+}
+.instructor{
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--primary_color);
+    border-radius: 2rem;
+    margin-right: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.instructor:hover{
+    box-shadow: 0 84px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);;
+}
+.img_container{
+    height: 6rem;
+    width: 6rem;
+
+}
+.img_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    clip-path: circle(50%);
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro span{
+    font-size: 1.35rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.intro span:last-child{
+    color: var(--primary_color);
+}
+
+.quote{
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+/* Contact US  */
+.contact_us{
+    margin: 2rem 6rem;
+
+}
+
+.heading span{
+    color: var(--primary_color);
+}
+
+.contact_details{
+    font-size: 1.5rem;
+    color: var(--primary_color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact_upper{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email, .mobile{
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.email i, .mobile i{
+    font-size: 7rem;
+    color: #333333;
+
+}
+
+.email h2,.mobile h2{
+    color: #333333;
+}
+
+.input_wrap1{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input_wrap1 input{
+   border: 2px solid var(--primary_color);
+   outline: none;
+   height: 3rem;
+   width: 45%;
+   padding: 1rem;
+   font-size: 1rem;
+}
+.input_wrap2{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input_wrap2 input{
+    width: 100%;
+    height: 3rem;
+    border: 2px solid var(--primary_color);
+    
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.input_wrap2 textarea{
+    margin-top: 2rem;
+    width: 100%;
+    height: 10rem;
+    border: 2px solid var(--primary_color);
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+form button {
+    margin-left: 2rem;
+}
+
+/* Media Query tablets */
+@media only screen and (max-width: 1050px)
+{
+
+    .navBar_wrapper{
+        display: none;
+    }
+}
+
+
+  
